@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de9dbe53-d5e3-4b8e-b501-1109388ba9a7" name="Changes" comment="created MusicPlayer.java" />
+    <list default="true" id="de9dbe53-d5e3-4b8e-b501-1109388ba9a7" name="Changes" comment="created PlayList.java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +33,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true"
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -87,7 +90,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663678313900</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="created MusicPlayer.java">
+      <created>1663678649438</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663678649438</updated>
+    </task>
+    <task id="LOCAL-00008" summary="created MusicPlayer.java">
+      <created>1663678663415</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663678663415</updated>
+    </task>
+    <task id="LOCAL-00009" summary="created PlayList.java">
+      <created>1663678746462</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663678746462</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,11 +128,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="changed source and target version from 19 to 11" />
-    <MESSAGE value="created Song.java" />
     <MESSAGE value="created Playlist.java" />
     <MESSAGE value="created DatabaseService.java" />
+    <MESSAGE value="created Song.java" />
     <MESSAGE value="created MusicPlayer.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="created MusicPlayer.java" />
+    <MESSAGE value="created PlayList.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="created PlayList.java" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
