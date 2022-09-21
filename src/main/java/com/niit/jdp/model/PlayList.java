@@ -5,6 +5,8 @@
  */
 package com.niit.jdp.model;
 
+import java.util.Objects;
+
 //import java.util.Objects;
 public class PlayList {
 
@@ -38,6 +40,22 @@ public class PlayList {
     public PlayList setPlayListName(String playListName) {
         PlayListName = playListName;
         return this;
+    }
+
+    // override  the equal and hashcode method
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PlayList playList = (PlayList) o;
+        return playListId == playList.playListId && Objects.equals(PlayListName, playList.PlayListName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(playListId, PlayListName);
     }
 
 }
