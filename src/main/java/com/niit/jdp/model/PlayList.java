@@ -58,4 +58,12 @@ public class PlayList {
         return Objects.hash(playListId, PlayListName);
     }
 
+    //override the toString method
+    @Override
+    public String toString() {
+        return "PlayList{" +
+                "playListId=" + playListId +
+                ", PlayListName='" + PlayListName + '\'' +
+                '}';
+    }
 }
