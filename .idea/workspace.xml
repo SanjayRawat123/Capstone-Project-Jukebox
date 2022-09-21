@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de9dbe53-d5e3-4b8e-b501-1109388ba9a7" name="Changes" comment="created source file song-databade.sql">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="de9dbe53-d5e3-4b8e-b501-1109388ba9a7" name="Changes" comment="created equal and hashcode and also toString method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Playlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/PlayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +130,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663679052711</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added field into Playlist class">
+      <created>1663733530009</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663733530009</updated>
+    </task>
+    <task id="LOCAL-00013" summary="created setter and getter method for  field">
+      <created>1663733625862</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663733625862</updated>
+    </task>
+    <task id="LOCAL-00014" summary="created equal and hashcode and also toString method">
+      <created>1663733758245</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663733758245</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,7 +175,10 @@
     <MESSAGE value="created PlayList.java" />
     <MESSAGE value="created source file song" />
     <MESSAGE value="created source file song-databade.sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="created source file song-databade.sql" />
+    <MESSAGE value="Added field into Playlist class" />
+    <MESSAGE value="created setter and getter method for  field" />
+    <MESSAGE value="created equal and hashcode and also toString method" />
+    <option name="LAST_COMMIT_MESSAGE" value="created equal and hashcode and also toString method" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
