@@ -7,6 +7,8 @@
 
 package com.niit.jdp.model;
 
+import java.util.Objects;
+
 public class Playlist {
 
     private int songId;
@@ -60,4 +62,27 @@ public class Playlist {
         return this;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Playlist playlist = (Playlist) o;
+        return songId == playlist.songId && Objects.equals(songName, playlist.songName) && Objects.equals(albumName, playlist.albumName) && Objects.equals(genre, playlist.genre) && Objects.equals(songPath, playlist.songPath);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(songId, songName, albumName, genre, songPath);
+    }
+
+    @Override
+    public String toString() {
+        return "Playlist{" +
+                "songId=" + songId +
+                ", songName='" + songName + '\'' +
+                ", albumName='" + albumName + '\'' +
+                ", genre='" + genre + '\'' +
+                ", songPath='" + songPath + '\'' +
+                '}';
+    }
 }
