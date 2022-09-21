@@ -7,11 +7,11 @@ package com.niit.jdp.model;
 
 import java.util.Objects;
 
-//import java.util.Objects;
+
 public class PlayList {
 
     private int playListId;
-    private String PlayListName;
+    private String playListName;
 
     // create  No argument constructor
     public PlayList() {
@@ -20,7 +20,7 @@ public class PlayList {
     // create parameterize constructor
     public PlayList(int playListId, String playListName) {
         this.playListId = playListId;
-        PlayListName = playListName;
+        this.playListName = playListName;
     }
 
     // define  setter  and getter method for field
@@ -34,11 +34,11 @@ public class PlayList {
     }
 
     public String getPlayListName() {
-        return PlayListName;
+        return playListName;
     }
 
     public PlayList setPlayListName(String playListName) {
-        PlayListName = playListName;
+        this.playListName = playListName;
         return this;
     }
 
@@ -50,12 +50,12 @@ public class PlayList {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         PlayList playList = (PlayList) o;
-        return playListId == playList.playListId && Objects.equals(PlayListName, playList.PlayListName);
+        return playListId == playList.playListId && Objects.equals(playListName, playList.playListName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(playListId, PlayListName);
+        return Objects.hash(playListId, playListName);
     }
 
     //override the toString method
@@ -63,7 +63,7 @@ public class PlayList {
     public String toString() {
         return "PlayList{" +
                 "playListId=" + playListId +
-                ", PlayListName='" + PlayListName + '\'' +
+                ", PlayListName='" + playListName + '\'' +
                 '}';
     }
 }

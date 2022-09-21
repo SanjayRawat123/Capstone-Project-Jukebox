@@ -7,5 +7,6 @@
 
 package com.niit.jdp.service;
 
-public class MusicPlayerService {
+public class MusicPlayer {
+    private String songPath = "";
 }

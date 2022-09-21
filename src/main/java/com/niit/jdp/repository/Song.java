@@ -7,5 +7,12 @@
 
 package com.niit.jdp.repository;
 
+import java.util.List;
+
 public class Song {
+    public List<Song> getFilepath() {
+        return null;
+    }
+
+
 }
