@@ -20,4 +20,24 @@ public class PlayList {
         this.playListId = playListId;
         PlayListName = playListName;
     }
+
+    // define  setter  and getter method for field
+    public int getPlayListId() {
+        return playListId;
+    }
+
+    public PlayList setPlayListId(int playListId) {
+        this.playListId = playListId;
+        return this;
+    }
+
+    public String getPlayListName() {
+        return PlayListName;
+    }
+
+    public PlayList setPlayListName(String playListName) {
+        PlayListName = playListName;
+        return this;
+    }
+
 }
