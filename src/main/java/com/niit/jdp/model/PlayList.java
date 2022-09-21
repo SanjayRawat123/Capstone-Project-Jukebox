@@ -11,5 +11,13 @@ public class PlayList {
     private int playListId;
     private String PlayListName;
 
+    // create  No argument constructor
+    public PlayList() {
+    }
 
+    // create parameterize constructor
+    public PlayList(int playListId, String playListName) {
+        this.playListId = playListId;
+        PlayListName = playListName;
+    }
 }
