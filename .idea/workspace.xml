@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de9dbe53-d5e3-4b8e-b501-1109388ba9a7" name="Changes" comment="created equal and hashcode and also toString method">
+    <list default="true" id="de9dbe53-d5e3-4b8e-b501-1109388ba9a7" name="Changes" comment="created parameterize  constructor">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/PlayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/DatabaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/song-databade.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/song-databade.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663733758245</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="created parameterize  constructor">
+      <created>1663734398349</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1663734398349</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,7 +186,9 @@
     <MESSAGE value="Added field into Playlist class" />
     <MESSAGE value="created setter and getter method for  field" />
     <MESSAGE value="created equal and hashcode and also toString method" />
-    <option name="LAST_COMMIT_MESSAGE" value="created equal and hashcode and also toString method" />
+    <MESSAGE value="created no argument constructor" />
+    <MESSAGE value="created parameterize  constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="created parameterize  constructor" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
