@@ -19,7 +19,7 @@ public class Main {
         int choice;
 
         do {
-            System.out.println("Welcome to the JukeBox Catalogue");
+            System.out.println("this is your  JukeBox Catalogue");
             System.out.println("============================================");
             System.out.println("1. View all playlist");
             System.out.println("2. Search full song details by playlist ID");
@@ -38,7 +38,7 @@ public class Main {
                 boolean connect = databaseService.connect();
                 System.out.println(connect);
                 databaseService.printConnectionStatus();
-                Connection connection = databaseService.getConnection();
+                Connection connection = DatabaseService.getConnection();
                 SongRepository songRepository = new SongRepository();
                 PlaylistRepository playlistRepository = new PlaylistRepository();
                 MusicPlayerService musicPlayerService = new MusicPlayerService();

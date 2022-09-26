@@ -13,6 +13,7 @@ public class PlaylistNotFoundException extends Exception {
     final String message;
 
     public PlaylistNotFoundException(String str) {
+
         message = str;
     }
 
