@@ -32,6 +32,7 @@ public class MusicPlayerService {
             songPath = "src/main/resources/songs/tuesday-glitch-soft-hip-hop-118327.wav";
         }
         File songFile = new File(songPath);
+
         try {
             // 3. an object of the AudioInputStream class
             AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(songFile);
@@ -53,4 +54,7 @@ public class MusicPlayerService {
             System.err.println("song thread was interrupted");
         }
     }
+
 }
+
+
