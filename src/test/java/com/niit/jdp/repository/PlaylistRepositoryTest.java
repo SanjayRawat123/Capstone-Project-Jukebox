@@ -35,7 +35,7 @@ class PlaylistRepositoryTest {
         playlistRepository = null;
         playlist = null;
     }
-
+// write the test case for getplaylistbyId
     @Test
     void getPlaylistByIdSuccess() throws SQLException, ClassNotFoundException {
         databaseService.connect();
