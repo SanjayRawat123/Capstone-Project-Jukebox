@@ -1,30 +1,21 @@
-/*
- *Author Name : Sanjay
- *
- *Date : 23-09-2022
- *Created With : IntelliJ IDEA Community Edition
- */
+
 
 package com.niit.jdp.repository;
 
 
+import com.niit.jdp.Exception.PlaylistNotFoundException;
 import com.niit.jdp.model.Playlist;
-import com.niit.jdp.model.Song;
 
 import java.sql.*;
 import java.util.List;
 
 public class PlaylistRepository implements Repository<Playlist> {
-
-
     /**
      * This function is used to read all the data from the database and display it in the console
      *
      * @param connection This is the connection to the database.
      * @return A list of Playlist objects.
      */
-
-
     @Override
     public List<Playlist> getAll(Connection connection) throws SQLException {
         String readQuery = "SELECT * FROM `jukebox`.`playlist`;";
@@ -32,11 +23,7 @@ public class PlaylistRepository implements Repository<Playlist> {
         try (Statement statement = connection.createStatement()) {
             resultSet = statement.executeQuery(readQuery);
             while (resultSet.next()) {
-                System.out.format("%s     %n%s     %n%s     %n%s%n", "Playlist ID :"
-                        + resultSet.getInt(1) + " ", "Playlist Name :"
-                        + resultSet.getString(2) +
-                        " ", "Song ID :" + resultSet.getInt(3)
-                        + " ", "Song Name :" + resultSet.getString(4));
+                System.out.format("%s     %n%s     %n%s     %n%s%n", "Playlist ID :" + resultSet.getInt(1) + " ", "Playlist Name :" + resultSet.getString(2) + " ", "Song ID :" + resultSet.getInt(3) + " ", "Song Name :" + resultSet.getString(4));
                 System.out.println();
             }
         }
@@ -47,44 +34,18 @@ public class PlaylistRepository implements Repository<Playlist> {
      * This function creates a new playlist in the database
      *
      * @param connection   The connection to the database.
-     * @param playListName The name of the playlist
+     * @param playlistName The name of the playlist
+     * @param songId       The id of the song you want to add to the playlist
      * @return The number of rows affected by the query.
      */
-
-
-    public boolean createPlayList(Connection connection, String playListName) throws SQLException {
-        String playListQuery = "CREATE TABLE `" + playListName + "` (`songId` INT NOT NULL PRIMARY KEY ," +
-                "`songName` VARCHAR(100),`albumName` VARCHAR(100),`genre` VARCHAR(100),`artistName` VARCHAR(100)," +
-                "`songPath`VARCHAR(100));";
-        try (Statement statement = connection.createStatement()) {
-            statement.execute(playListQuery);
-        }
-        return false;
-    }
-
-    /**
-     * This function adds a song to a playlist
-     *
-     * @param connection Connection object
-     * @param song       The name of the playlist to which the song is to be added.
-     * @return The method returns a boolean value.
-     */
-
-    public boolean addSong(Connection connection, Song song) throws SQLException {
-
-        String insertQuery = "INSERT INTO `jukebox`.`song` " + "(`songId`, `songName`,  `albumName`,`genre`,`artistName`,`songPath`) " + "VALUES ( ?,?, ?,?,?,?);";
+    public boolean createPlaylist(Connection connection, String playlistName, int songId, String songName) throws SQLException {
+        String insertQuery = "INSERT INTO `jukebox`.`playlist` (playlistName, songId,songName) VALUES (?,?,?);";
         int numberOfRowsAffected;
         try (PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
-            preparedStatement.setString(1, song.getsongId());
-            preparedStatement.setString(2, song.getSongName());
-            preparedStatement.setString(3, song.getalbumName());
-
-            preparedStatement.setString(4, song.getGenre());
-            preparedStatement.setString(5, song.getArtistName());
-            preparedStatement.setString(6, song.getSongPath());
-
+            preparedStatement.setString(1, playlistName);
+            preparedStatement.setInt(2, songId);
+            preparedStatement.setString(3, songName);
             numberOfRowsAffected = preparedStatement.executeUpdate();
-
         }
         return numberOfRowsAffected > 0;
     }
@@ -137,10 +98,9 @@ public class PlaylistRepository implements Repository<Playlist> {
         return numberOfRowsAffected > 0;
     }
 
-    private static class PlaylistNotFoundException extends Throwable {
-        public PlaylistNotFoundException(String s) {
+    public boolean createPlaylist(Connection connection, String playlistName) {
 
 
-        }
+        return false;
     }
 }

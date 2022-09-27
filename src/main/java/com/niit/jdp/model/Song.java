@@ -32,9 +32,15 @@ public class Song {
         this.songPath = songPath;
     }
 
-    public Song(int songId, String songName, String albumName, String genre, String artistName, String songPath) {
+    public Song(Song song) {
+        this.song = song;
+    }
+
+    public Song(int songId, String songName, String artistName, String genre, String duration, String songPath) {
+
 
     }
+
 
     public Song getSong() {
         return song;
@@ -128,11 +134,5 @@ public class Song {
     }
 
 
-    public String getsongId() {
-        return null;
-    }
 
-    public String getalbumName() {
-        return null;
-    }
 }

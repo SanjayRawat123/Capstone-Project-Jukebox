@@ -1,10 +1,3 @@
-/*
- *Author Name : Sanjay
- *
- *Date : 23-09-2022
- *Created With : IntelliJ IDEA Community Edition
- */
-
 
 package com.niit.jdp.repository;
 
@@ -31,10 +24,10 @@ public class SongRepository implements Repository<Song> {
             while (songsResultSet.next()) {
                 int songId = songsResultSet.getInt("song_id");
                 String songName = songsResultSet.getString("song_name");
-                String artistName = songsResultSet.getString("song_artist");
-                String genre = songsResultSet.getString("song_genre");
+                String artistName = songsResultSet.getString("artist_name");
+                String genre = songsResultSet.getString("genre");
                 String duration = songsResultSet.getString("duration");
-                String songPath = songsResultSet.getString("SongPath");
+                String songPath = songsResultSet.getString("Song path");
                 System.out.format("%s     %n%s     %n%s     %n%s%n", "Song ID :" + songsResultSet.getInt(1) + " ", "Song Name :" + songsResultSet.getString(2) + " ", "Artist Name :" + songsResultSet.getString(3) + " ", "Genre :" + songsResultSet.getString(4));
                 System.out.println();
                 Song songs = new Song(songId, songName, artistName, genre, duration, songPath);
@@ -62,10 +55,10 @@ public class SongRepository implements Repository<Song> {
             while (songsResultSet.next()) {
                 int songId = songsResultSet.getInt("song_id");
                 String songName = songsResultSet.getString("song_name");
-                String artistName = songsResultSet.getString("song_artist");
-                String genre = songsResultSet.getString("song_genre");
+                String artistName = songsResultSet.getString("artist_name");
+                String genre = songsResultSet.getString("genre");
                 String duration = songsResultSet.getString("duration");
-                String songPath = songsResultSet.getString("SongPath");
+                String songPath = songsResultSet.getString("Song path");
                 songs = new Song(songId, songName, artistName, genre, duration, songPath);
                 if (songId == 0) {
                     throw new SongNotFoundException("The song is not in the list!! Try Valid choice.");
@@ -94,6 +87,4 @@ public class SongRepository implements Repository<Song> {
         }
         return numberOfRowsAffected > 0;
     }
-
-
 }

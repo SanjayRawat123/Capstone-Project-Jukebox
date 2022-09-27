@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de9dbe53-d5e3-4b8e-b501-1109388ba9a7" name="Changes" comment="resolved all warning">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/1/014d77068afdd61babac0f449091ee271adda5cb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df915df9a9d3dc9bcfe75dc66a18455a235f099a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -449,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664187678299</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="resolved all warning">
+      <created>1664262211579</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1664262211579</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

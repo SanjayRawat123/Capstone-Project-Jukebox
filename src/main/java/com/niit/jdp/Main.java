@@ -25,9 +25,9 @@ public class Main {
             System.out.println("2. Search full song details by playlist ID");
             System.out.println("3: Play song from the Playlist");
             System.out.println("4. Create you're own playlist");
-            System.out.println("5. add song int playlist");
-            System.out.println("6: Delete the created playlist if you need");
-            System.out.println("7. Exit");
+            // System.out.println("5. add song int playlist");
+            System.out.println("5: Delete the created playlist if you need");
+            System.out.println("6. Exit");
             System.out.println("============================================");
 
             Scanner scanner = new Scanner(System.in);
@@ -59,6 +59,7 @@ public class Main {
                         System.out.println("-------------------------------------------------------");
                         System.out.println("Enter Song ID to view full song details :");
                         int id = scanner.nextInt();
+
                         Song byId = songRepository.getById(connection, id);
                         if (byId.getSongId() == 0) {
                             throw new SongNotFoundException("The song is not in the list!! Try Valid choice.");
@@ -90,7 +91,7 @@ public class Main {
                             System.out.println("Enter Song Name to add into the playlist : ");
                             String songName = scanner.next();
                             connection = DatabaseService.getConnection();
-                            boolean playlist = playlistRepository.createPlayList(connection, playlistName);
+                            boolean playlist = playlistRepository.createPlaylist(connection, playlistName);
                             System.out.println(playlist);
                             System.out.println("Enter 2 to continue adding song to your playlist or 0 to stop adding");
                             scanner.nextInt();
@@ -99,29 +100,29 @@ public class Main {
 
 
                     }
+                    /**  case 5: {
+                     System.out.println("enter the paylist name where you want to add");
+                     String playlistName = scanner.next();
+                     System.out.println("enter songId");
+                     int songId = scanner.nextInt();
+                     System.out.println("enter songName");
+                     String songName = scanner.next();
+                     System.out.println("enter albumName");
+                     String albumName = scanner.next();
+                     System.out.println("enter gener");
+                     String genre = scanner.next();
+                     System.out.println("enter artistName");
+                     String artistName = scanner.next();
+                     System.out.println("enter songPath");
+                     String songPath = scanner.next();
+                     Song s1 = new Song(songId, songName, albumName, genre, artistName, songPath);
+                     connection = DatabaseService.getConnection();
+                     playlistRepository.addSong(connection, s1);
+
+
+                     break;
+                     }*/
                     case 5: {
-                        System.out.println("enter the paylist name where you want to add");
-                        String playlistName = scanner.next();
-                        System.out.println("enter songId");
-                        int songId = scanner.nextInt();
-                        System.out.println("enter songName");
-                        String songName = scanner.next();
-                        System.out.println("enter albumName");
-                        String albumName = scanner.next();
-                        System.out.println("enter gener");
-                        String genre = scanner.next();
-                        System.out.println("enter artistName");
-                        String artistName = scanner.next();
-                        System.out.println("enter songPath");
-                        String songPath = scanner.next();
-                        Song s1 = new Song(songId, songName, albumName, genre, artistName, songPath);
-                        connection = DatabaseService.getConnection();
-                        playlistRepository.addSong(connection, s1);
-
-
-                        break;
-                    }
-                    case 6: {
                         System.out.println();
                         List<Playlist> all = playlistRepository.getAll(connection);
                         System.out.println(all);
@@ -139,10 +140,10 @@ public class Main {
             } catch (SQLException | SongNotFoundException | PlaylistNotFoundException exception) {
                 System.err.println("Could not connect to the database!");
                 exception.printStackTrace();
-                choice = 6;
+                choice = 5;
             } catch (ClassNotFoundException e) {
                 throw new RuntimeException(e);
             }
-        } while (choice != 6);
+        } while (choice != 5);
     }
 }
