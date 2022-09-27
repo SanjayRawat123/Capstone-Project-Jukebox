@@ -48,7 +48,7 @@ public class SongRepository implements Repository<Song> {
     public Song getById(Connection connection, int id) throws SQLException {
 
         String searchQuery = "SELECT * FROM `jukebox`.`song` WHERE(`song_id` = ?);";
-        Song songs = new Song();
+        Song song = new Song();
         try (PreparedStatement preparedStatement = connection.prepareStatement(searchQuery)) {
             preparedStatement.setInt(1, id);
             ResultSet songsResultSet = preparedStatement.executeQuery();
@@ -58,8 +58,8 @@ public class SongRepository implements Repository<Song> {
                 String artistName = songsResultSet.getString("artist_name");
                 String genre = songsResultSet.getString("genre");
                 String duration = songsResultSet.getString("duration");
-                String songPath = songsResultSet.getString("Song path");
-                songs = new Song(songId, songName, artistName, genre, duration, songPath);
+                String songPath = songsResultSet.getString("SongPath");
+                song = new Song(songId, songName, artistName, genre, duration, songPath);
                 if (songId == 0) {
                     throw new SongNotFoundException("The song is not in the list!! Try Valid choice.");
                 }
@@ -67,7 +67,7 @@ public class SongRepository implements Repository<Song> {
         } catch (SongNotFoundException e) {
             throw new RuntimeException(e);
         }
-        return songs;
+        return song;
     }
 
     /**
