@@ -9,8 +9,6 @@
 package com.niit.jdp.repository;
 
 
-import com.niit.jdp.model.Song;
-import com.niit.jdp.service.DatabaseService;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

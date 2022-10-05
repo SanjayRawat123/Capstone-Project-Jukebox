@@ -68,9 +68,6 @@
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
   </component>
-  <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/src/main/resources/song-databade.sql" connection-id="871440f9-4785-4f3a-9038-c8bbaa64757d" session-id="MAIN" current-schema="jukeboxdb" />
-  </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
     <execution-history>

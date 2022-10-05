@@ -1,80 +1,71 @@
 /*
- *Author Name : Sanjay
- *
- *Date : 23-09-2022
- *Created With : IntelliJ IDEA Community Edition
+ * Author Name:Sanjay
+ * Date: 10/4/2022
+ * Created With: IntelliJ IDEA Community Edition
  */
+
 package com.niit.jdp.model;
 
 import java.util.Objects;
 
 public class Song {
-    private Song song;
-    private int songId;
-    private String songName;
-    private String artistName;
-    private String albumName;
-    private String genre;
+    //these are attribute
+    private int id;
+    private String name;
     private String duration;
-    private String songPath;
+    private String albumName;
+    private String artistName;
+    private String genre;
 
+    //non-parameter constructor
     public Song() {
     }
 
-
-    public Song(int songId, String songName, String albumName, String genre, String duration, String artistName, String songPath) {
-        this.songId = songId;
-        this.songName = songName;
-        this.artistName = artistName;
-        this.albumName = albumName;
-        this.genre = genre;
+    //parameter constructor
+    public Song(int id, String name, String duration, String albumName, String artistName, String genre) {
+        this.id = id;
+        this.name = name;
         this.duration = duration;
-        this.songPath = songPath;
+        this.albumName = albumName;
+        this.artistName = artistName;
+        this.genre = genre;
     }
 
-    public Song(Song song) {
-        this.song = song;
+    //setter getter
+    public int getId() {
+        return id;
     }
 
-    public Song(int songId, String songName, String artistName, String genre, String duration, String songPath) {
-
-
+    public void setId(int id) {
+        this.id = id;
     }
 
-
-    public Song getSong() {
-        return song;
+    public String getName() {
+        return name;
     }
 
-    public Song setSong(Song song) {
-        this.song = song;
-        return this;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getSongId() {
-        return songId;
+    public String getDuration() {
+        return duration;
     }
 
-    public void setSongId(int songId) {
-        this.songId = songId;
+    public void setDuration(String duration) {
+        this.duration = duration;
     }
 
-    public String getSongName() {
-        return songName;
+    public String getAlbumName() {
+        return albumName;
     }
 
-    public void setSongName(String songName) {
-        this.songName = songName;
+    public void setAlbumName(String albumName) {
+        this.albumName = albumName;
     }
 
     public String getArtistName() {
         return artistName;
-    }
-
-
-    public Song setAlbumName(String albumName) {
-        this.albumName = albumName;
-        return this;
     }
 
     public void setArtistName(String artistName) {
@@ -89,50 +80,29 @@ public class Song {
         this.genre = genre;
     }
 
-    public String getDuration() {
-        return duration;
-    }
-
-    public void setDuration(String duration) {
-        this.duration = duration;
-    }
-
-    public String getSongPath() {
-        return songPath;
-    }
-
-    public void setSongPath(String songPath) {
-        this.songPath = songPath;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Song song1 = (Song) o;
-        return songId == song1.songId && Objects.equals(song, song1.song) && Objects.equals(songName, song1.songName) && Objects.equals(artistName, song1.artistName) && Objects.equals(albumName, song1.albumName) && Objects.equals(genre, song1.genre) && Objects.equals(duration, song1.duration) && Objects.equals(songPath, song1.songPath);
+        if (!(o instanceof Song)) return false;
+        Song song = (Song) o;
+        return id == song.id && Objects.equals(name, song.name) && Objects.equals(duration, song.duration) && Objects.equals(albumName, song.albumName) && Objects.equals(artistName, song.artistName) && Objects.equals(genre, song.genre);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(song, songId, songName, artistName, albumName, genre, duration, songPath);
+        return Objects.hash(id, name, duration, albumName, artistName, genre);
     }
-
 
     @Override
     public String toString() {
         return "Song{" +
-                "song=" + song +
-                ", songId=" + songId +
-                ", songName='" + songName + '\'' +
-                ", artistName='" + artistName + '\'' +
-                ", albumName='" + albumName + '\'' +
-                ", genre='" + genre + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", duration='" + duration + '\'' +
-                ", songPath='" + songPath + '\'' +
+                ", albumName='" + albumName + '\'' +
+                ", artistName='" + artistName + '\'' +
+                ", genre='" + genre + '\'' +
                 '}';
     }
-
-
-
 }
+

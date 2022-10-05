@@ -1,9 +1,10 @@
 /*
- *Author Name : Sanjay
- *
- *Date : 23-09-2022
- *Created With : IntelliJ IDEA Community Edition
+ * Author Name:Sanjay
+ * Date: 4/10/2022
+ * Created With: IntelliJ IDEA Community Edition
  */
+
+
 package com.niit.jdp.service;
 
 import java.sql.Connection;
@@ -11,48 +12,36 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseService {
-    // Declaring a variable.
-    private static final String URL = "jdbc:mysql://localhost:3306/jukebox";
-    // Declaring a variable.
+
+    // the url of the database
+    private static final String URL = "Jdbc:mysql://localhost:3306/jukebox";
+
+    // the credentials of the user trying to log in to the database
     private static final String USERNAME = "root";
-    // A variable declaration.
     private static final String PASSWORD = "Rawat@9756037495";
+    // private field to store the reference of the connection object
+    private Connection databaseConnection;
 
-    // A variable declaration.
-    private static Connection connection;
+    // Create a connection object using the driverManager class
+    public Connection connect() {
+        try {
+            databaseConnection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
 
-    public DatabaseService() {
-        this.connection = null;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return databaseConnection;
     }
 
-    public static Connection getConnection() {
-        return connection;
-    }
+    // check connection
+    public Boolean printConnectionStatus() {
 
-    /**
-     * It connects to the database.
-     *
-     * @return A boolean value.
-     */
-    public boolean connect() throws ClassNotFoundException, SQLException {
-        // 1. load the jdbc driver into the program memory
-        Class.forName("com.mysql.cj.jdbc.Driver");
-
-        // 2. create a connection object using the DriverManager class
-        connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-
-        // 3. check if the connection is successful
-        return connection != null;
-    }
-
-    /**
-     * If the connection is not null, print "Connected to the database", otherwise print "Not connected to the database"
-     */
-    public void printConnectionStatus() {
-        if (connection != null) {
+        if (databaseConnection == connect()) {
             System.out.println("Connected to the database");
         } else {
-            System.err.println("Not connected to the database");
+            System.err.println(" connected to the database");
         }
+        return databaseConnection != null;
     }
 }
+

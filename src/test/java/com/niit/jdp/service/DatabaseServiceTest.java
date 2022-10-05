@@ -1,47 +1,31 @@
-/*
- * Author Name: sanjay
- * Date: 23/09/2022
- * Created With: IntelliJ IDEA Community Edition
- */
-
-
 package com.niit.jdp.service;
 
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.sql.Connection;
-import java.sql.SQLException;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class DatabaseServiceTest {
+class DatabaseServiceTest {
 
+    //object define
     DatabaseService databaseService;
 
     @BeforeEach
     void setUp() {
+        // object initialization
         databaseService = new DatabaseService();
     }
 
     @AfterEach
     void tearDown() {
+        // assigning value null to object
         databaseService = null;
     }
 
     @Test
-    void getConnectionSuccess() throws SQLException, ClassNotFoundException {
-        boolean actualOutput = databaseService.connect();
-        boolean expectedOutput = databaseService.connect();
-        Assertions.assertEquals(expectedOutput, actualOutput);
+    void connect() {
+        assertTrue(databaseService.printConnectionStatus());
+        // assertFalse(databaseService.printConnectionStatus());
     }
-
-    @Test
-    void getConnectionFailure() throws SQLException, ClassNotFoundException {
-        Connection actualOutput = databaseService.getConnection();
-        boolean expectedOutput = databaseService.connect();
-        Assertions.assertNotEquals(expectedOutput, actualOutput);
-    }
-
-
 }
