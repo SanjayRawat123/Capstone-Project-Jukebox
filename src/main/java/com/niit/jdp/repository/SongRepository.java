@@ -10,6 +10,7 @@ package com.niit.jdp.repository;
 import com.niit.jdp.model.Song;
 import com.niit.jdp.service.DatabaseService;
 import com.niit.jdp.service.GenreNotFound;
+import com.niit.jdp.service.SongInterface;
 import com.niit.jdp.service.SongNotFound;
 
 import java.sql.Connection;

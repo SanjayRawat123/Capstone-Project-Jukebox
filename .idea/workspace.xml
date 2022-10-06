@@ -4,49 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de9dbe53-d5e3-4b8e-b501-1109388ba9a7" name="Changes" comment="resolved all warning">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/main/JukeBoxImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/PlayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlayListRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/GenreNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/SongComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/SongNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/All Time Low.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/Despacito.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/In The End.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/Kehndi Hundi Si.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/Meri Zindagi Hai.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/Ravcha Bavcha.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/See You Again.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/Something Just Like This.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/76e4769967c2f5ff42f709ecea3a37b573324546" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d64740a0188cfe3a976d191fad90ad808745fea3" beforeDir="false" />
+    <list default="true" id="de9dbe53-d5e3-4b8e-b501-1109388ba9a7" name="Changes" comment="refactor test case and used coding convention and standards">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/411558f0bc5ef3bb063b2207228d58f0589e4ae3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d01c6bb4dea02aab7f44205f59654122a3de3dec" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Exception/PlaylistNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Exception/SongNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Playlist.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlaylistRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/Repository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/SongInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/DatabaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/MusicPlayerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/SongService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/SongService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/song-databade.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/songs/Kesariya(PagalWorld.com.se).wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/songs/Kesariya.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/songs/effect.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/songs/Senorita.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/songs/mixkit-playful-10.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/songs/Hello World.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/songs/musie-sentimental-soundaudio.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/songs/Cheap Thrills.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/songs/tuesday-glitch-soft-hip-hop-118327.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlqureeis/Dump20220925 (1).sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sqlqureeis/Dump20221005.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/PlaylistRepositoryTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/SongRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/SongRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/service/DatabaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/service/DatabaseServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/service/SongServiceTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,19 +45,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "C:/Users/Sanjay/IdeaProjects/Capstone-Project-Jukebox/src/main/resources/sqlqureeis",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sanjay/IdeaProjects/Capstone-Project-Jukebox/src/main/resources/sqlqureeis&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.niit.jdp.repository" />
@@ -110,11 +76,11 @@
       <recent name="com.niit.jdp.repository" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.niit.jdp.repository" />
       <recent name="com.niit.jdp.service" />
+      <recent name="com.niit.jdp.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JukeBoxImpl">
+  <component name="RunManager" selected="JUnit.SongRepositoryTest">
     <configuration name="JukeBoxImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.niit.jdp.main.JukeBoxImpl" />
       <module name="Capstone-Project-Jukebox" />
@@ -133,7 +99,7 @@
       <module name="Capstone-Project-Jukebox" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.niit.jdp.repository.*" />
+          <option name="PATTERN" value="com.niit.jdp.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,7 +111,7 @@
       <module name="Capstone-Project-Jukebox" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.niit.jdp.repository.*" />
+          <option name="PATTERN" value="com.niit.jdp.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,7 +126,7 @@
       <module name="Capstone-Project-Jukebox" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.niit.jdp.repository.*" />
+          <option name="PATTERN" value="com.niit.jdp.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,7 +137,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SongServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SongRepositoryTest.getSongSearchBySongName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Capstone-Project-Jukebox" />
       <extension name="coverage">
         <pattern>
@@ -179,20 +145,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.niit.jdp.service" />
-      <option name="MAIN_CLASS_NAME" value="com.niit.jdp.service.SongServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.niit.jdp.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jdp.repository.SongRepositoryTest" />
+      <option name="METHOD_NAME" value="getSongSearchBySongName" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SongRepositoryTest" />
+        <item itemvalue="JUnit.DatabaseServiceTest" />
+        <item itemvalue="JUnit.SongRepositoryTest.getSongSearchBySongName" />
         <item itemvalue="Application.JukeBoxImpl" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.SongServiceTest" />
-        <item itemvalue="JUnit.DatabaseServiceTest" />
-        <item itemvalue="JUnit.SongRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -506,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664276296342</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="refactor test case and used coding convention and standards">
+      <created>1664966713569</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1664966713569</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -521,7 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="overridden  the equal and hashcode method  in class PlayList.java" />
     <MESSAGE value="overridden the toString method  in class PlayList.java" />
     <MESSAGE value="listed  field in Playlist class" />
     <MESSAGE value="listed  field in Song class" />
@@ -546,7 +519,8 @@
     <MESSAGE value="final commit" />
     <MESSAGE value="added song restart and stop button" />
     <MESSAGE value="resolved all warning" />
-    <option name="LAST_COMMIT_MESSAGE" value="resolved all warning" />
+    <MESSAGE value="refactor test case and used coding convention and standards" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor test case and used coding convention and standards" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

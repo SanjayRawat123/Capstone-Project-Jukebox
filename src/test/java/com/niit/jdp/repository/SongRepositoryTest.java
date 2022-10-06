@@ -1,59 +1,127 @@
-/*
- * Author Name: sanjay
- *
- * Date: 23/9/2022
- * Created With: IntelliJ IDEA Community Edition
- */
-
-
 package com.niit.jdp.repository;
 
-
+import com.niit.jdp.model.Song;
+import com.niit.jdp.service.GenreNotFound;
+import com.niit.jdp.service.SongNotFound;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.sql.Connection;
-import java.sql.SQLException;
+import java.util.List;
 
-public class SongRepositoryTest {
-    SongRepository songRepository = null;
-    Song song;
-    DatabaseService databaseService = new DatabaseService();
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
+class SongRepositoryTest {
+    SongRepository songRepository;
+    List<Song> songList;
 
     @BeforeEach
     void setUp() {
         songRepository = new SongRepository();
-        song = new Song();
-        databaseService = new DatabaseService();
-
+        songList = songRepository.displayAllSong();
     }
 
     @AfterEach
     void tearDown() {
         songRepository = null;
-        song = null;
+    }
+
+    @Test
+    void getSongSearchBySongName() {
+        int expected = 1;
+        int unexpected = 10;
+        List<Song> getSongByName = null;
+        try {
+            getSongByName = songRepository.getSongSearchBySongName(songList, "all time low");
+        } catch (SongNotFound e) {
+            e.printStackTrace();
+        }
+        int actual = getSongByName.size();
+        assertEquals(expected, actual);
+
+    }
+
+    @Test
+    void getSongSearchBySongNames() {
+        int expected = 1;
+        int unexpected = 10;
+        List<Song> getSongByName = null;
+        try {
+            getSongByName = songRepository.getSongSearchBySongName(songList, "all time low");
+        } catch (SongNotFound e) {
+            e.printStackTrace();
+        }
+        int actual = getSongByName.size();
+        assertNotEquals(unexpected, actual);
+    }
+
+    /**
+     * @Test void getSongSearchByAlbumName() {
+     * int expected = 1;
+     * int unexpected = 5;
+     * List<Song> getSongSearchByAlbumName = songRepository.getSongSearchByAlbumName(songList, "Random");
+     * int actual = getSongSearchByAlbumName.size();
+     * assertEquals(expected, actual);
+     * <p>
+     * }
+     */
+
+    @Test
+    void getSongSearchByAlbumNames() {
+        int expected = 1;
+        int unexpected = 5;
+        List<Song> getSongSearchByAlbumName = songRepository.getSongSearchByAlbumName(songList, "Random");
+        int actual = getSongSearchByAlbumName.size();
+        assertNotEquals(unexpected, actual);
+    }
+
+    @Test
+    void getSongSearchByArtistName() {
+        int expected = 1;
+        int unexpected = 5;
+        List<Song> getSongSearchByArtistName = songRepository.getSongSearchByArtistName(songList, "Sia");
+        int actual = getSongSearchByArtistName.size();
+        assertEquals(expected, actual);
+
+
+    }
+
+    @Test
+    void getSongSearchByArtistNames() {
+        int expected = 1;
+        int unexpected = 5;
+        List<Song> getSongSearchByArtistName = songRepository.getSongSearchByArtistName(songList, "Sia");
+        int actual = getSongSearchByArtistName.size();
+        assertNotEquals(unexpected, actual);
+
+
     }
 
 
     @Test
-    void getSongByIdSuccess() throws SQLException, ClassNotFoundException {
-        databaseService.connect();
-        Connection connection = databaseService.getConnection();
-        Song output = songRepository.getById(connection, song.getSongId());
-        Song expectedOutput = songRepository.getById(connection, output.getSongId());
-        Assertions.assertEquals(expectedOutput, output);
+    void getSongSearchByGenre() {
+        int expected = 1;
+        int unexpected = 5;
+        try {
+            List<Song> getSongSearchByGenre = songRepository.getSongSearchByGenre(songList, "Romantic");
+            int actual = getSongSearchByGenre.size();
+            assertEquals(expected, actual);
+        } catch (GenreNotFound e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
-    void getSongByIdFailure() throws SQLException, ClassNotFoundException {
-        databaseService.connect();
-        Connection connection = databaseService.getConnection();
-        Song expectedOutput = songRepository.getById(connection, song.getSongId());
-        boolean output = songRepository.deleteById(connection, song.getSongId());
-        Assertions.assertNotEquals(expectedOutput, output);
+    void getSongSearchByGenres() {
+        int expected = 1;
+        int unexpected = 5;
+        try {
+            List<Song> getSongSearchByGenre = songRepository.getSongSearchByGenre(songList, "Romantic");
+            int actual = getSongSearchByGenre.size();
+            assertNotEquals(unexpected, actual);
+        } catch (GenreNotFound e) {
+            e.printStackTrace();
+        }
     }
-
 }

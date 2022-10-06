@@ -1,11 +1,10 @@
-package com.niit.jdp.repository;/*
+package com.niit.jdp.service;/*
  * Author Name:
  * Date: 10/4/2022
  * Created With: IntelliJ IDEA Community Edition
  */
 
 import com.niit.jdp.model.Song;
-import com.niit.jdp.service.SongNotFound;
 
 import java.util.List;
 
