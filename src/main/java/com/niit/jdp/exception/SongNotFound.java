@@ -5,7 +5,7 @@
  */
 
 
-package com.niit.jdp.service;
+package com.niit.jdp.exception;
 
 public class SongNotFound extends Exception {
     public SongNotFound(String message) {

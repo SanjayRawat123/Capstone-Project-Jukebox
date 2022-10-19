@@ -1,8 +1,8 @@
 package com.niit.jdp.repository;
 
+import com.niit.jdp.exception.GenreNotFound;
+import com.niit.jdp.exception.SongNotFound;
 import com.niit.jdp.model.Song;
-import com.niit.jdp.service.GenreNotFound;
-import com.niit.jdp.service.SongNotFound;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -56,16 +56,6 @@ class SongRepositoryTest {
         assertNotEquals(unexpected, actual);
     }
 
-    /**
-     * @Test void getSongSearchByAlbumName() {
-     * int expected = 1;
-     * int unexpected = 5;
-     * List<Song> getSongSearchByAlbumName = songRepository.getSongSearchByAlbumName(songList, "Random");
-     * int actual = getSongSearchByAlbumName.size();
-     * assertEquals(expected, actual);
-     * <p>
-     * }
-     */
 
     @Test
     void getSongSearchByAlbumNames() {

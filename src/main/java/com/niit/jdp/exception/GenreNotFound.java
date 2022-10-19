@@ -5,10 +5,11 @@
  */
 
 
-package com.niit.jdp.service;
+package com.niit.jdp.exception;
 
 public class GenreNotFound extends Exception {
     public GenreNotFound(String message) {
+
         super(message);
     }
 }

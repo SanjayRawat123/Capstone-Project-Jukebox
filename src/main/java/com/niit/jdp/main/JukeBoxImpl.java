@@ -6,12 +6,12 @@
 
 package com.niit.jdp.main;
 
+import com.niit.jdp.exception.GenreNotFound;
+import com.niit.jdp.exception.SongNotFound;
 import com.niit.jdp.model.PlayList;
 import com.niit.jdp.model.Song;
 import com.niit.jdp.repository.PlayListRepository;
 import com.niit.jdp.repository.SongRepository;
-import com.niit.jdp.service.GenreNotFound;
-import com.niit.jdp.service.SongNotFound;
 import com.niit.jdp.service.SongService;
 
 import java.util.List;
