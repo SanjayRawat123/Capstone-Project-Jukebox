@@ -8,3 +8,7 @@ w
 G.idea/sonarlint/issuestore/e/d/ed67eb178d523a4b3f117dcbe0eda5196367ceec,8\a\8a6dae537be9f47878c6964c6ee40cab0ca75e28
 w
 G.idea/sonarlint/issuestore/8/a/8a6dae537be9f47878c6964c6ee40cab0ca75e28,8\e\8e3d5572111947a6fc62da316a319faf3e927047
+m
+=src/test/java/com/niit/jdp/repository/SongRepositoryTest.java,4\1\411558f0bc5ef3bb063b2207228d58f0589e4ae3
+^
+.src/main/java/com/niit/jdp/model/PlayList.java,7\8\785862512ee3cf8ee540533c6bc419816712a50f

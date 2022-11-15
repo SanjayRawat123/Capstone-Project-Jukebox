@@ -90,6 +90,7 @@ public class Song {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(id, name, duration, albumName, artistName, genre);
     }
 

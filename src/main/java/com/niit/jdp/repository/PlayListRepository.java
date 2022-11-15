@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PlayListRepository {
-
+    // Creating Database Service object for calling connect method
     DatabaseService databaseService = new DatabaseService();
 
     // for adding PlayList into dataBase (create play list)
@@ -43,7 +43,9 @@ public class PlayListRepository {
     // Show play list (to view play list)
     public List<PlayList> ShowPlayList() {
         String playList = null;
-        int count = 0;
+        int count = 0; // ArrayList arr = new ArrayList();
+        // arr.add(13);
+        // aar.add("sr")
         List<PlayList> playListsName = new ArrayList<>();
         //Creates a Statement object for sending SQL statements to the database.
         // SQL statements without parameters are normally executed using Statement objects.

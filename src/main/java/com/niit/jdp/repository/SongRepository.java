@@ -122,6 +122,7 @@ public class SongRepository implements SongInterface {
             }
         }
         if (songList1.size() == 0) {
+            //create exception object by using throw keyword 
             //assigning value to constructor
             throw new GenreNotFound("Genre not found");
         } else {
